@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 terminal=$1
+vim=$2
 
 function setclip {
   xclip -selection c
@@ -11,7 +12,7 @@ function getclip {
 }
 
 file=$(mktemp)
-$terminal -e nvim "$file"
+$terminal -e $vim "$file"
 
 cat $file | setclip
 rm $file
