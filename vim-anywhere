@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+terminal=$1
+
+function setclip {
+  xclip -selection c
+}
+
+function getclip {
+  xclip -selection clipboard -o
+}
+
+file=$(mktemp)
+$terminal -e nvim "$file"
+
+cat $file | setclip
+rm $file
+
+xdotool key ctrl+shift+v
