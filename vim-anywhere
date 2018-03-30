@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+if [[ "$#" -ne 2 ]]; then
+    echo "Must give terminal name followed by either 'vim' or 'nvim' as cli arguments."
+    exit 1
+fi
+
 terminal=$1
 vim=$2
 
