@@ -1,12 +1,12 @@
 # vim-anywhere
 
-Edit text for any application in Vim or Neovim and have it pasted into the application when you close the buffer.
+Edit text for any application in Vim, Neovim, or Gvim and have it pasted into the application when you close the buffer.
 
 ## Installation
 
 ### Manual
 
-Requires xclip and xdotool. Install these from your distro's package manager.
+Requires xclip and xdotool. You should install these from your distro's package manager.
 
 Then run the following:
 ```
@@ -22,7 +22,7 @@ Install vim-anywhere-git from the AUR.
 
 ## Usage
 
-Run the script and give your default terminal name along with 'vim' or 'nvim'.
+Run the script and give your default terminal name along with 'vim', 'nvim', or 'gvim'.
 
 Example:
 ```

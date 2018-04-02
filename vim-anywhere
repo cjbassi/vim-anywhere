@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 if [[ "$#" -ne 2 ]]; then
-    echo "Must give terminal name followed by either 'vim' or 'nvim' as cli arguments."
+    echo "Must give terminal name followed by either 'vim', 'nvim', or 'gvim' as cli arguments."
     exit 1
 fi
 
@@ -9,15 +9,19 @@ terminal=$1
 vim=$2
 
 function setclip {
-  xclip -selection c
+    xclip -selection c
 }
 
 function getclip {
-  xclip -selection clipboard -o
+    xclip -selection clipboard -o
 }
 
 file=$(mktemp)
-$terminal -e $vim "$file"
+if [[ $vim == 'gvim' ]]; then
+    $vim "$file"
+else
+    $terminal -e $vim "$file"
+fi
 
 cat $file | setclip
 rm $file
