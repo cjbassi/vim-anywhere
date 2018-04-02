@@ -22,11 +22,11 @@ Install vim-anywhere-git from the AUR.
 
 ## Usage
 
-Run the script and give your default terminal name along with 'vim', 'nvim', or 'gvim'.
+Run the script and give 'vim', 'nvim', or 'gvim' and your default terminal if you are using vim or nvim.
 
 Example:
 ```
-vim-anywhere alacritty nvim
+vim-anywhere nvim alacritty
 ```
 
 It's recommended that you bind the above command to a keybind for convenience.
