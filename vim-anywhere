@@ -32,7 +32,7 @@ file=$(mktemp)
 if [[ $vim == 'gvim' ]]; then
     $vim "$file"
 else
-    $terminal -e $vim "$file"
+    $terminal -e "$vim $file"
 fi
 
 cat $file | setclip
