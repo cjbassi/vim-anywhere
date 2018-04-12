@@ -18,7 +18,7 @@ Then copy vim-anywhere into your $PATH.
 
 ### Arch
 
-Install vim-anywhere-git from the AUR.
+Install `vim-anywhere-git` from the AUR.
 
 ## Usage
 
