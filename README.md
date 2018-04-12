@@ -16,7 +16,7 @@ chmod +x vim-anywhere
 
 Then copy vim-anywhere into your $PATH.
 
-### Arch
+### Arch Linux
 
 Install `vim-anywhere-git` from the AUR.
 
