@@ -1,12 +1,12 @@
 # vim-anywhere
 
-Edit text for any application in Vim, Neovim, or Gvim and have it pasted into the application when you close the buffer.
+Edit text in Vim, Neovim, or Gvim and have it copied to the clipboard when the buffer is closed to be pasted into an application.
 
 ## Installation
 
 ### Manual
 
-Requires xclip and xdotool. You should install these from your distro's package manager.
+Requires xclip, which should be installed from your distro's package manager.
 
 Then run the following:
 ```
@@ -28,5 +28,9 @@ Example:
 ```
 vim-anywhere nvim alacritty
 ```
+or
+```
+vim-anywhere gvim
+```
 
-It's recommended that you bind the above command to a keybind for convenience.
+It's recommended to bind the command to a keybind for convenience.

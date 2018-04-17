@@ -42,5 +42,3 @@ else
 fi
 
 cat $file | setclip
-
-xdotool key ctrl+shift+v
