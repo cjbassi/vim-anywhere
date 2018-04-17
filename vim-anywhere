@@ -28,14 +28,19 @@ function getclip {
     xclip -selection clipboard -o
 }
 
-file=$(mktemp)
+mkdir -p /tmp/vim-anywhere
+file=$(mktemp -p /tmp/vim-anywhere)
+
 if [[ $vim == 'gvim' ]]; then
-    $vim "$file"
+    $vim $file
 else
-    $terminal -e "$vim $file"
+    if [[ $terminal == 'alacritty' ]]; then
+        $terminal -e $vim $file
+    else
+        $terminal -e "$vim $file"
+    fi
 fi
 
 cat $file | setclip
-rm $file
 
 xdotool key ctrl+shift+v
