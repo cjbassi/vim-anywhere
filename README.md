@@ -22,7 +22,7 @@ Install `vim-anywhere-git` from the AUR.
 
 ## Usage
 
-Run the script and give 'vim', 'nvim', or 'gvim' and your default terminal if you are using vim or nvim.
+Run the script and give `vim`, `nvim`, or `gvim` and your default terminal if you're using Vim or Neovim.
 
 Example:
 ```
