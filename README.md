@@ -2,6 +2,8 @@
 
 Edit text in Vim, Neovim, or Gvim and have it copied to the clipboard when the buffer is closed to be pasted into an application.
 
+Files are temporarily saved in /tmp/vim-anywhere if you need to go back to them.
+
 ## Installation
 
 ### Manual
