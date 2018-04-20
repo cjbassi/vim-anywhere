@@ -11,7 +11,7 @@ Files are temporarily saved in /tmp/vim-anywhere if you need to go back to them.
 Requires xclip, which should be installed from your distro's package manager.
 
 Then run the following:
-```
+```sh
 curl -LO https://raw.githubusercontent.com/cjbassi/vim-anywhere/master/vim-anywhere
 chmod +x vim-anywhere
 ```
@@ -27,11 +27,11 @@ Install `vim-anywhere-git` from the AUR.
 Run the script and give `vim`, `nvim`, or `gvim` and your default terminal if you're using Vim or Neovim.
 
 Example:
-```
+```sh
 vim-anywhere nvim alacritty
 ```
 or
-```
+```sh
 vim-anywhere gvim
 ```
 
