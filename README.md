@@ -1,3 +1,5 @@
+Deprecated. Check out [vimclip](https://github.com/hrantzsch/vimclip) instead.
+
 # vim-anywhere
 
 Edit text in Vim, Neovim, or Gvim and have it copied to the clipboard when the buffer is closed to be pasted into an application.
