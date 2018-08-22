@@ -34,7 +34,7 @@ file=$(mktemp -p /tmp/vim-anywhere)
 if [[ $vim == 'gvim' ]]; then
     $vim $file
 else
-    if [[ $terminal == 'alacritty' ]]; then
+    if [[ $terminal == 'alacritty' ]] || [[ $terminal == 'urxvt' ]]; then
         $terminal -e $vim $file
     else
         $terminal -e "$vim $file"
